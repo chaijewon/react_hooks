@@ -1,25 +1,56 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+/*
+     index.js => webpack
+     ======== (main)
+     ReactDOM.render(<App/>,docuement.getElementById('root'))
+       <App/> => return값 ==> <div>Hello</div> ==> innerHTML
+     function App()
+     {
+        return (
+           <div>Hello</div>  => jsx
 
+        )
+     }
+     index.html
+       <html>
+         <body>
+           <div id="root"><div>Hello</div></div>
+         </body>
+       </html>
+
+     index.html
+     <html>
+       <head>
+         <script src="http://~~/ajax/react.js"></script>
+         <script type="text/babel">
+          function App()
+          {
+          }
+          ReactDOM.render(<App/>,docuement.getElementById('root'))
+         </script>
+         <script type="text/babel">
+          class App extends React.Component{
+
+          }
+         </script>
+
+       </head>
+     </html>
+ */
+/*const App=()=>{
+  return (
+  <div>Hello!!</div>
+  )
+}
+const App1=()=>(
+    <div>Hello~~</div>
+)*/
+import TextInput from "./TextInput";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TextInput/>
   );
 }
 
